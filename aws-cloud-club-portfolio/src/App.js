@@ -13,7 +13,7 @@ function App() {
       <HeroSection /> {/* Nuha */}
       <AboutSection /> {/* MD */}
       <CardSection /> {/* Abdul */}
-      <Footer /> {/* Talha */}
+      <Footer /> {/* Syed & Ayman */}
     </>
   );
 }
