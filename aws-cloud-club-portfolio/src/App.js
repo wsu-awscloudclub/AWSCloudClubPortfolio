@@ -12,7 +12,7 @@ function App() {
       <Navbar /> {/* Zwar */}
       <HeroSection /> {/* Nuha */}
       <AboutSection /> {/* MD */}
-      <CardSection /> {/* Abdul */}
+      <CardSection /> {/* Abdul & Ibrahim */}
       <Footer /> {/* Syed & Ayman */}
     </>
   );
