@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "./images/aws.png";
+import bg from "../img/aws.jpg";
 
 const HeroSection = () => {
   const styles = {
