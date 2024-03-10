@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     
-    <NavbarContainer>
+    <>
       <div>
         <a href="home.html">
           logo
@@ -17,7 +17,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </NavbarContainer>
+    </>
   )
 }
 
