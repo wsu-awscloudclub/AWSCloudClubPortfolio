@@ -1,14 +1,14 @@
 import React from 'react'
 
  //imports the CSS file named "App.css." This file likely contains additional styles 
-import './App.css';
+import './HeroSection.css';
 // imports an image file named "apple-splash.png" from the "images" directory and assigns it to the variable bg. 
-import bg from "./images/aws.png"
+import bg from '../img/aws.jpg'
 
 
-function App() {
+function HeroSection() {
 
-  const HeroSection = () => { 
+  const styles = { 
     backgroundImage: `url(${bg})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
