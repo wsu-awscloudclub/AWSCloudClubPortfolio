@@ -1,22 +1,25 @@
 import React from 'react'
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     
     <>
-      <div>
-        <a href="home.html">
-          logo
-        </a>
-
-        <div>
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <nav>
+        <div id="logo">
+          <a href="home.html">
+            logo
+          </a>
         </div>
-      </div>
+
+        <div id="links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        
+      </nav>
     </>
   )
 }
