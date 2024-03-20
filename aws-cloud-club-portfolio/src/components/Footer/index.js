@@ -1,27 +1,25 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faInstagram, faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faFacebook, faInstagram, faDiscord, faLinkedin, faMeetup, fa42Group } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css'; // Import the CSS file for styling
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="social-icons">
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://web.groupme.com/join_group/95690303/BEox3UGa" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} className="icon" />
         </a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebook} className="icon" />
+        <a href="https://www.meetup.com/aws-cloud-club-at-wayne-state/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faMeetup} className="icon" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/awscloudwsu/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} className="icon" />
         </a>
-        <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.com/invite/mQy6uQghTT" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faDiscord} className="icon" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} className="icon" />
-        </a>
+        
       </div>
       <div className="footer-links">
         <a href="/about">About Us</a>
