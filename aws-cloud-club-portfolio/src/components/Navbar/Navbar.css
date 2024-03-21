@@ -11,3 +11,8 @@ nav{
     color: #fff;
     padding: 0px 20px;
 }
+
+#logo {
+    width: 100px;
+    height: auto;
+}

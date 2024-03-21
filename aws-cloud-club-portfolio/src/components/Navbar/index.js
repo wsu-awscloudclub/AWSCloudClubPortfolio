@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav>
         <div id="logo">
           <a href="home.html">
-            logo
+            <img src="AWS_MODIFIED_LOGO.jpg" alt="AWS Logo" className="logo-image" />
           </a>
         </div>
 
