@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faInstagram, faDiscord, faMeetup, facomments } from '@fortawesome/free-brands-svg-icons';
+import {faInstagram, faDiscord, faMeetup, faBloggerB } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css'; // Import the CSS file for styling
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="social-icons">
         <a href="https://web.groupme.com/join_group/95690303/BEox3UGa" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={facomments} className="icon" />
+          <FontAwesomeIcon icon={faBloggerB} className="icon" />
         </a>
         <a href="https://www.meetup.com/aws-cloud-club-at-wayne-state/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faMeetup} className="icon" />
