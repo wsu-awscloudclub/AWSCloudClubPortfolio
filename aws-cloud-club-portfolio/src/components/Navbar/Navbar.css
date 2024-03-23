@@ -1,13 +1,35 @@
-nav{
+nav {
     display:flex;
     align-items:center;
     justify-content: space-between;
-    background: #000; 
-    padding: 25px 55px;
+    background: #033400; 
+    padding: 25px 40px;
 }
 
-#links a{
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#links li {
+    list-style: none;
+    padding: 0 20px;
+    postion: relative;
+}
+
+#links li a {
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
     color: #fff;
-    padding: 0px 20px;
+}
+
+#links li a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
 }
