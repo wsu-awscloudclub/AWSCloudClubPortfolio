@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
+import HeroSection from './components/HeroSection/index';
 import AboutSection from './components/AboutSection';
 import CardSection from './components/CardSection';
 import Footer from './components/Footer';
