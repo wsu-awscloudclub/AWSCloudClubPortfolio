@@ -12,7 +12,8 @@ const Navbar = () => {
           <img src={logo} alt="AWS Logo" className="logo-image" />
         </a>
       </div>
-
+    <>
+    </>
       <div id="links">
         <a href="home.html">Home</a>
         <a href="about.html">About</a>
