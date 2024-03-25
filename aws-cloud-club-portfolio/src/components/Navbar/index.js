@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         {/* GitHub link */}
-        <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/wsu-awscloudclub" target="_blank" rel="noopener noreferrer">
           <FaGithub className="icon" />
         </a>
         {/* LinkedIn link */}
