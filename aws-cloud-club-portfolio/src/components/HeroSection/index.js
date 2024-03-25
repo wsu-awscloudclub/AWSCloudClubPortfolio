@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/aws.jpg";
+import './HeroSection.css';
 
 const HeroSection = () => {
   const heroStyles = {
@@ -15,7 +16,7 @@ const HeroSection = () => {
   };
 
   const logoStyles = {
-    width: '150px', // Adjust size as needed
+    width: '300px', // Adjust size as needed
     marginBottom: '1rem', // Add margin below logo
   };
 
@@ -23,7 +24,7 @@ const HeroSection = () => {
     <div style={heroStyles}>
       <img src={logo} alt="Logo" style={logoStyles} />
       <h1>Welcome to the AWS Cloud Club</h1>
-      <p>Empowering your cloud journey</p>
+      <h2>Empowering your cloud journey</h2>
       <button>Explore Now</button>
     </div>
   );
