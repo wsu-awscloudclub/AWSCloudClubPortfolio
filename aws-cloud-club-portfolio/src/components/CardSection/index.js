@@ -11,7 +11,7 @@ const CardSection = () => {
     },
     {
       title: "Valentine's' Social Mixer",
-      description: 'Having gathering meets where we play games and socialize.',
+      description: 'We gather for social events where we play games and socialize together.',
       link: 'https://www.linkedin.com/posts/aws-cloud-club-wayne-state-university_get-ready-for-a-tech-tastic-time-aws-cloud-activity-7161922613668143104-9TVf?utm_source=share&utm_medium=member_desktop'
     },
     {
