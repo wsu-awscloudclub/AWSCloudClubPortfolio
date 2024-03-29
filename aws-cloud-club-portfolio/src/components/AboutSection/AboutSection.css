@@ -1,0 +1,23 @@
+.about-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FFC72C; /* Wayne State University gold */
+    color: #3B97D3; /* Amazon Web Services blue */
+  }
+  
+  .about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
