@@ -1,22 +1,53 @@
 .about-section {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #FFC72C; /* Wayne State University gold */
-  color: #3B97D3; /* Amazon Web Services blue */
+  background: linear-gradient(to right, #1d4350, #a43931);
+  padding: 80px 0;
+  color: #fff;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.about-section.scrolled {
+  background-color: #333; /* Change background color when scrolled */
 }
 
 .about-section .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .about-section h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card.active {
+  transform: translateY(-10px);
+  border: 2px solid #FFC72C; /* Highlight effect with border */
+}
+
+.card h2 {
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-.about-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  line-height: 1.5;
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }

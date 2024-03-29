@@ -1,22 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './AboutSection.css';
 
 const AboutSection = () => {
+  const [activeCardIndex, setActiveCardIndex] = useState(0);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const topics = [
+    { title: 'Who We Are', description: 'We are the AWS Cloud Club at Wayne State University, a group of passionate individuals dedicated to exploring and learning about cloud computing technologies.' },
+    { title: 'What We Do', description: 'Our club organizes workshops, events, and provides resources to help members expand their skills and knowledge in Amazon Web Services and cloud computing.' },
+    { title: 'Our Goals', description: 'Our primary goal is to empower students with practical knowledge in cloud computing and AWS services. We also aim to build a strong community of cloud enthusiasts.' },
+    { title: 'The Team', description: 'Our team consists of students from various backgrounds who share a common interest in cloud computing. We welcome new members who are eager to learn and contribute to our community.' }
+  ];
+
+  const handleCardClick = (index) => {
+    setActiveCardIndex(index);
+  };
+
   return (
-    <div className="about-section">
+    <div className={`about-section ${scrolling ? 'scrolled' : ''}`}>
       <div className="container">
         <h1>About Us</h1>
-        <p>Welcome to the AWS Cloud Club at Wayne State University!</p>
-        <p>
-          We are a group of passionate individuals dedicated to exploring,
-          learning, and sharing knowledge about Amazon Web Services (AWS) and
-          cloud computing technologies.
-        </p>
-        <p>
-          Whether you're a beginner or an experienced cloud enthusiast, our
-          club offers workshops, events, and resources to help you expand your
-          skills and connect with like-minded individuals.
-        </p>
+        <div className="card-container">
+          {topics.map((topic, index) => (
+            <div key={index} className={`card ${index === activeCardIndex ? 'active' : ''}`} onClick={() => handleCardClick(index)}>
+              <h2>{topic.title}</h2>
+              <p>{topic.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
