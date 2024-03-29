@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Orbitron';
+    font-size:50px;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em
+}
+
+h2 {
+    font-family: 'Orbitron';
+    position: absolute;
+    right: 3em;
+    width: 15em;
+    bottom: 2em;
+}
+
+button {
+    font-family: 'Orbitron';
+}
