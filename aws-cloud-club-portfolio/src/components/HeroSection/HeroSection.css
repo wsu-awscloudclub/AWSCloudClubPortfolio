@@ -1,20 +1,33 @@
-h1 {
-    font-family: 'Orbitron';
-    font-size:50px;
-    position: absolute;
-    top: 2em;
-    left: 1em;
-    width: 9em
+/* HeroSection.css */
+.hero-container {
+    background: none;
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h2 {
-    font-family: 'Orbitron';
-    position: absolute;
-    right: 3em;
-    width: 15em;
-    bottom: 2em;
+.hero-logo {
+    width: 300px;
+    margin-bottom: 1rem;
 }
 
-button {
-    font-family: 'Orbitron';
+.hero-button {
+    background-color: #98EC65;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Add :hover state for the button */
+.hero-button:hover {
+    background-color: #8dd35f; /* Slightly darker green on hover */
 }

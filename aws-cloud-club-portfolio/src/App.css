@@ -1,6 +1,15 @@
+/* Global stylesheet (app.css) */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Encode Sans Expanded'
+  font-family: 'Encode Sans Expanded', sans-serif; /* Added fallback font */
+}
+
+body {
+  background: linear-gradient(to bottom, #000000, #98EC65); /* Black to light green gradient */
+  color: #ffffff; /* Ensures text color is white for better contrast with the dark background */
+  min-height: 100vh; /* Ensures minimal height */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
 }

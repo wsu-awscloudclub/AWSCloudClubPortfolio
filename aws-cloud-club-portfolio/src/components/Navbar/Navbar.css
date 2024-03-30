@@ -2,9 +2,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #000; 
+    background: none; /* Consider a more contrasting color if needed */
     padding: 25px 55px;
+    z-index: 1000; /* Ensure navbar stays on top */
+    width: 100%; /* Ensure full width */
+    position: fixed; /* Or 'absolute', depending on layout */
+    top: 0;
 }
+
 
 #links a {
     text-decoration: none;

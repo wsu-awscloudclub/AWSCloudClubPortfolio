@@ -2,8 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #f7f7f7; /* Light gray background */
+    background-color: none; /* Light gray background */
     padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
   
   .card {

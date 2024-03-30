@@ -28,11 +28,6 @@ function Footer() {
         <a href="/contact">Contact Us</a>
         <a href="/join_us">Become a Member</a>
       </div>
-      <div className="newsletter-signup">
-        <p>Subscribe to our newsletter for updates:</p>
-        <input type="email" placeholder="Enter your email" />
-        <button>Subscribe</button>
-      </div>
       <div className="logo-container">
           <img src="https://media.licdn.com/dms/image/D560BAQGV-F31g-N5Cg/company-logo_200_200/0/1696183988983?e=1718236800&v=beta&t=DKGiWuAI1AW4SLDgIQSteb6k3wXLoOkjedc6kJ22VYs" alt="Club Logo" className="logo" />
           <img src="https://www.logo.wine/a/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.svg" alt="AWS Logo" className="logo" />

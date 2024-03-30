@@ -1,31 +1,23 @@
 import React from "react";
+import { Link } from 'react-scroll'; // Import Link component from react-scroll
 import logo from "../img/aws.jpg";
 import './HeroSection.css';
 
 const HeroSection = () => {
-  const heroStyles = {
-    background: 'linear-gradient(to bottom, #000000, #98EC65)', // Black to light green gradient
-    color: '#ffffff', // Text color
-    textAlign: 'center', // Center align text
-    minHeight: '100vh', // Set minimum height to viewport height
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: '2rem', // Padding for content
-  };
-
-  const logoStyles = {
-    width: '300px', // Adjust size as needed
-    marginBottom: '1rem', // Add margin below logo
-  };
-
   return (
-    <div style={heroStyles}>
-      <img src={logo} alt="Logo" style={logoStyles} />
+    <div className="hero-container">
+      <img src={logo} alt="Logo" className="hero-logo" />
       <h1>Welcome to the AWS Cloud Club</h1>
       <h2>Empowering your cloud journey</h2>
-      <button>Explore Now</button>
+      <Link
+        to="card-section" // ID of the target section you want to scroll to
+        smooth={true} // Enable smooth scrolling
+        duration={500} // Duration of the scroll animation in milliseconds
+        className="hero-button" // Apply the same class for styling
+        style={{ cursor: 'pointer' }} 
+      >
+        Explore Now
+      </Link>
     </div>
   );
 };
